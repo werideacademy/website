@@ -103,7 +103,7 @@
     let cur = 0, lastFocus = null;
     const show = (i) => {
       cur = (i + sources.length) % sources.length;
-      lbImg.src = sources[cur].src;
+      lbImg.src = sources[cur].dataset.full || sources[cur].src;
       lbImg.alt = sources[cur].alt;
     };
     const open = (i) => {
