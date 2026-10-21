@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Bikeyard Capriasca · WeRide Academy</title>
+  <meta name="description" content="The Bikeyard Capriasca a Tesserete: Trail Arena con 4 trail, una jumpline e il pumptrack Velosolution. Area pubblica gestita da WeRide Academy. Eventi privati, allenamenti, test day e shooting.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" type="image/png" href="assets/img/logo_white.png">
+  <meta property="og:title" content="The Bikeyard Capriasca">
+  <meta property="og:description" content="Trail, jumpline e pumptrack nel cuore della Capriasca.">
+  <meta property="og:image" content="assets/img/bikeyard_banner.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/theboldfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <a href="index.html" class="brand" aria-label="WeRide Academy, home">
+    <img src="assets/img/logo_white.png" alt="WeRide Academy" width="160" height="46">
+  </a>
+  <nav class="nav" id="nav" aria-label="Principale">
+    <a href="index.html#academy">Academy</a>
+    <div class="nav-item has-sub">
+      <a href="index.html#lezioni" aria-haspopup="true">Lezioni<span class="caret" aria-hidden="true"></span></a>
+      <div class="submenu">
+        <a href="index.html#private">Lezione privata</a>
+        <a href="index.html#gruppo">Lezione di gruppo</a>
+      </div>
+    </div>
+    <a href="index.html#calendario">Calendario</a>
+    <a href="index.html#summer-camps">Summer Camps</a>
+    <a href="index.html#team">Team</a>
+    <a href="bikeyard.html" class="active" aria-current="page">Bikeyard</a>
+    <a href="#contatto" class="nav-cta">Prenota</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Apri menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero hero-dark">
+    <img class="hero-img" src="assets/img/bikeyard_banner.jpg" alt="Le strutture in legno del Bikeyard nel bosco di Tesserete">
+    <div class="hero-shade"></div>
+    <div class="hero-blur" aria-hidden="true"></div>
+    <div class="hero-content wrap">
+      <span class="tag">Tesserete · Capriasca</span>
+      <h1 class="display display-sm">The Bikeyard<br><span class="accent-amber">Capriasca</span></h1>
+      <p class="lead">Trails, jumpline e pumptrack nel cuore della Capriasca. Aperto a tutti.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#sentieri">I sentieri</a>
+        <a class="btn btn-ghost" href="#servizi">Servizi</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#intro" aria-label="Scorri giù"></a>
+  </section>
+
+  <!-- INTRO -->
+  <section class="numbers topo" id="intro">
+    <div class="wrap numbers-grid">
+      <p class="statement reveal">Un luogo dove la MTB crea <em class="em-amber">community</em>.</p>
+      <dl class="stats reveal">
+        <div><dt>4</dt><dd>Trail</dd></div>
+        <div><dt>1</dt><dd>Jumpline</dd></div>
+        <div><dt>1</dt><dd>Pumptrack</dd></div>
+        <div><dt>12</dt><dd>Mesi di attività</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SENTIERI -->
+  <section class="trails" id="sentieri">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="kicker">Trail Arena</span>
+        <h2 class="title reveal">Cinque linee.<br>Un bosco.</h2>
+      </header>
+
+      <div class="trails-grid">
+        <figure class="trail-map reveal">
+          <img src="assets/img/bikeyard_map.jpg" alt="Mappa della Trail Arena con i 5 sentieri, partenza e arrivo" loading="lazy">
+        </figure>
+
+        <ol class="trail-list">
+          <li class="reveal" style="--c:var(--t-easy)"><span class="t-num">1</span><div><h3>Easyway</h3><p>Facile</p></div></li>
+          <li class="reveal" style="--c:var(--t-mid)"><span class="t-num">2</span><div><h3>Toboga</h3><p>Media e difficile</p></div></li>
+          <li class="reveal" style="--c:var(--t-easy)"><span class="t-num">3</span><div><h3>N'duro</h3><p>Facile</p></div></li>
+          <li class="reveal" style="--c:var(--t-mid)"><span class="t-num">4</span><div><h3>Playful</h3><p>Media</p></div></li>
+          <li class="reveal" style="--c:var(--t-mid)"><span class="t-num">5</span><div><h3>Jumpline</h3><p>Media</p></div></li>
+        </ol>
+      </div>
+
+      <ul class="rules">
+        <li><strong>07:30 – 21:00</strong><span>Tutti i giorni</span></li>
+        <li><strong>Casco obbligatorio</strong><span>Protezioni consigliate</span></li>
+        <li><strong>Niente pioggia</strong><span>Sentieri chiusi con fango</span></li>
+        <li><strong>Solo MTB</strong><span>No pedoni, cani, cavalli, moto</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PUMPTRACK -->
+  <section class="programs by-programs">
+    <article class="program" id="pumptrack">
+      <figure class="program-img"><img src="assets/img/wix_pex58536.jpg" alt="Rider al pumptrack di Tesserete" loading="lazy"></figure>
+      <div class="program-text">
+        <span class="num">Pumptrack</span>
+        <h3 class="title-sm">Ritmo puro.</h3>
+        <p>198 metri, 7 curve paraboliche e un wallride. Realizzato da Velosolution.</p>
+        <p class="program-meta">Tutti i giorni 07:00 – 22:00</p>
+        <a class="link" href="https://maps.app.goo.gl/LZdDVA4ZvcZuWbuM7" target="_blank" rel="noopener">Come arrivarci →</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- CHI L'HA RESO POSSIBILE -->
+  <section class="credits topo">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="kicker">Area pubblica</span>
+        <h2 class="title reveal">Di tutti.<br>Per tutti.</h2>
+        <p class="section-lead reveal">Il Bikeyard è un'infrastruttura sportiva pubblica, aperta gratuitamente a chiunque pratichi la mountain bike.</p>
+      </header>
+      <ul class="credit-grid">
+        <li class="reveal"><span>Finanziato da</span><strong>Comune di Capriasca</strong><em>con il TCS</em></li>
+        <li class="reveal"><span>Progettato e costruito da</span><strong>Monterra Group</strong><em>in collaborazione con RCKRworks</em><a class="credit-link" href="https://www.monterragroup.ch" target="_blank" rel="noopener">www.monterragroup.ch</a></li>
+        <li class="reveal"><span>Pumptrack</span><strong>Velosolution</strong></li>
+        <li class="reveal"><span>Gestito da</span><strong>WeRide Academy</strong><a class="credit-link" href="index.html">www.werideacademy.ch</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SERVIZI -->
+  <section class="services" id="servizi">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="kicker">Servizi</span>
+        <h2 class="title reveal">Il tuo evento.<br>Il nostro terreno.</h2>
+      </header>
+    </div>
+    <ul class="service-grid">
+      <li class="service reveal">
+        <img src="assets/img/bikeyard_arena.jpg" alt="" loading="lazy">
+        <div><h3>Eventi privati di riding</h3><p>Compleanni, team aziendali, gruppi di amici.</p></div>
+      </li>
+      <li class="service reveal">
+        <img src="assets/img/rider2.jpg" alt="" loading="lazy">
+        <div><h3>Allenamenti</h3><p>Sessioni tecniche per rider e squadre.</p></div>
+      </li>
+      <li class="service reveal">
+        <img src="assets/img/service_testday.jpg" alt="" loading="lazy">
+        <div><h3>Test day per brand</h3><p>Fai provare i tuoi prodotti sul terreno.</p></div>
+      </li>
+      <li class="service reveal">
+        <img src="assets/img/service_shooting.jpg" alt="" loading="lazy">
+        <div><h3>Shooting di prodotto</h3><p>Foto, video e reel in un ambiente MTB autentico.</p></div>
+      </li>
+    </ul>
+    <div class="wrap services-cta">
+      <a class="btn btn-primary" href="#contatto">Organizza con noi</a>
+      <p>Corsi commerciali nell'Area Trail: contributo di fr. 100.– per la manutenzione.</p>
+    </div>
+  </section>
+
+  <!-- MANUTENZIONE & PARTNER -->
+  <section class="maintenance topo" id="partner">
+    <div class="wrap">
+      <div class="maint-grid">
+        <div>
+          <span class="kicker">Partner</span>
+          <h2 class="title reveal">La manutenzione<br>prima di tutto.</h2>
+          <p class="section-lead reveal">Ogni contributo dei nostri sponsor viene reinvestito nel Bikeyard, per tenere i sentieri sempre in condizioni ottimali.</p>
+        </div>
+        <ul class="maint-list">
+          <li class="reveal"><strong>Manutenzione</strong><span>Cura ordinaria e ripristino dei trail</span></li>
+          <li class="reveal"><strong>Sicurezza</strong><span>Controlli, segnaletica e miglioramenti</span></li>
+          <li class="reveal"><strong>Sviluppo</strong><span>Nuovi trail, feature e infrastrutture</span></li>
+          <li class="reveal"><strong>Community</strong><span>Eventi e iniziative per i rider</span></li>
+        </ul>
+      </div>
+
+      <div class="partner-group">
+        <span class="kicker">Con il sostegno di</span>
+        <ul class="sponsor-row">
+          <li><img src="assets/sponsors/merida.png" alt="Merida" loading="lazy"></li>
+          <li><img src="assets/sponsors/kenda_white.png" alt="Kenda" loading="lazy"></li>
+          <li class="logo-lg"><img src="assets/sponsors/milani.png" alt="Trasporti A. Milani" loading="lazy"></li>
+          <li class="logo-color"><img src="assets/sponsors/nordvssud.png" alt="Nord vs Sud on the road" loading="lazy"></li>
+        </ul>
+      </div>
+
+      <div class="partner-cta reveal">
+        <p><strong>Vuoi sostenere il Bikeyard?</strong> Tre formule, da Supporter a Feature Partner.</p>
+        <a class="btn btn-primary" href="mailto:info@werideacademy.ch?subject=Partnership%20The%20Bikeyard">Diventa partner</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERIA (scorrevole) -->
+  <section class="gallery" id="galleria" aria-label="Galleria fotografica">
+    <div class="gallery-strip" id="galStrip">
+      <ul class="gallery-track">
+        <li><button type="button" class="gal-item" data-i="0"><img src="assets/img/galleria/bikeyard_01.jpg" alt="The Bikeyard Capriasca, foto 1" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="1"><img src="assets/img/galleria/bikeyard_02.jpg" alt="The Bikeyard Capriasca, foto 2" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="2"><img src="assets/img/galleria/bikeyard_03.jpg" alt="The Bikeyard Capriasca, foto 3" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="3"><img src="assets/img/galleria/bikeyard_04.jpg" alt="The Bikeyard Capriasca, foto 4" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="4"><img src="assets/img/galleria/bikeyard_05.jpg" alt="The Bikeyard Capriasca, foto 5" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="5"><img src="assets/img/galleria/bikeyard_06.jpg" alt="The Bikeyard Capriasca, foto 6" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="6"><img src="assets/img/galleria/bikeyard_07.jpg" alt="The Bikeyard Capriasca, foto 7" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="7"><img src="assets/img/galleria/bikeyard_08.jpg" alt="The Bikeyard Capriasca, foto 8" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="8"><img src="assets/img/galleria/bikeyard_09.jpg" alt="The Bikeyard Capriasca, foto 9" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="9"><img src="assets/img/galleria/bikeyard_10.jpg" alt="The Bikeyard Capriasca, foto 10" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="10"><img src="assets/img/galleria/bikeyard_11.jpg" alt="The Bikeyard Capriasca, foto 11" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="11"><img src="assets/img/galleria/bikeyard_12.jpg" alt="The Bikeyard Capriasca, foto 12" loading="lazy"></button></li>
+        <li><button type="button" class="gal-item" data-i="12"><img src="assets/img/galleria/bikeyard_13.jpg" alt="The Bikeyard Capriasca, foto 13" loading="lazy"></button></li>
+      </ul>
+    </div>
+    <button type="button" class="gal-nav gal-prev" aria-label="Foto precedenti">←</button>
+    <button type="button" class="gal-nav gal-next" aria-label="Foto successive">→</button>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto ingrandita">
+    <button type="button" class="lb-close" aria-label="Chiudi">×</button>
+    <button type="button" class="lb-prev" aria-label="Foto precedente">←</button>
+    <img alt="">
+    <button type="button" class="lb-next" aria-label="Foto successiva">→</button>
+  </div>
+
+  <!-- CONTATTO -->
+  <section class="contact" id="contatto">
+    <img class="contact-bg" src="assets/img/bikeyard_contatto.jpg" alt="" loading="lazy">
+    <div class="contact-shade"></div>
+    <div class="wrap contact-inner">
+      <span class="tag">Ride. Learn. Progress.</span>
+      <h2 class="display-md">Vieni a girare.</h2>
+      <div class="contact-cards">
+        <a class="contact-card" href="https://wa.me/41763619661" target="_blank" rel="noopener">
+          <span>Eventi e gruppi</span><strong>+41 76 361 96 61</strong>
+        </a>
+        <a class="contact-card" href="mailto:info@werideacademy.ch">
+          <span>Email</span><strong>info@werideacademy.ch</strong>
+        </a>
+        <a class="contact-card" href="https://www.instagram.com/thebikeyard.capriasca" target="_blank" rel="noopener">
+          <span>Instagram</span><strong>@thebikeyard.capriasca</strong>
+        </a>
+        <a class="contact-card" href="https://maps.app.goo.gl/PT7gZLC8YSRP57ERA" target="_blank" rel="noopener">
+          <span>Dove siamo</span><strong>Tesserete, Capriasca</strong>
+        </a>
+      </div>
+      <p class="contact-note">Hai notato un danno? Segnalalo a <a href="mailto:info@visitcapriasca.ch">info@visitcapriasca.ch</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img src="assets/img/logo_white.png" alt="WeRide Academy" width="120" height="35">
+    <p>© <span id="year"></span> WeRide Academy · Ticino, Svizzera</p>
+    <a href="#top">Torna su ↑</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

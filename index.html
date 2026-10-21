@@ -8,11 +8,12 @@
   <meta name="theme-color" content="#111111">
   <link rel="icon" type="image/png" href="assets/img/logo_white.png">
   <meta property="og:title" content="WeRide Academy">
-  <meta property="og:description" content="Scuola MTB Enduro & Gravity in Ticino. Ride. Learn. Share.">
-  <meta property="og:image" content="assets/img/wix_academy.jpg">
+  <meta property="og:description" content="Scuola MTB Enduro & Gravity in Ticino. Ride. Learn. Progress.">
+  <meta property="og:image" content="assets/img/hero_home.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/theboldfont.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,9 +24,17 @@
   </a>
   <nav class="nav" id="nav" aria-label="Principale">
     <a href="#academy">Academy</a>
-    <a href="#lezioni">Lezioni private</a>
+    <div class="nav-item has-sub">
+      <a href="#lezioni" aria-haspopup="true">Lezioni<span class="caret" aria-hidden="true"></span></a>
+      <div class="submenu">
+        <a href="#private">Lezione privata</a>
+        <a href="#gruppo">Lezione di gruppo</a>
+      </div>
+    </div>
     <a href="#calendario">Calendario</a>
+    <a href="#summer-camps">Summer Camps</a>
     <a href="#team">Team</a>
+    <a href="bikeyard.html">Bikeyard</a>
     <a href="#contatto" class="nav-cta">Prenota</a>
   </nav>
   <button class="burger" id="burger" aria-label="Apri menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
@@ -34,23 +43,25 @@
 <main>
 
   <!-- HERO -->
-  <section class="hero">
-    <img class="hero-img" src="assets/img/wix_academy.jpg" alt="I ragazzi della WeRide Academy al pumptrack di Tesserete">
+  <section class="hero hero-split">
+    <img class="hero-img" src="assets/img/hero_home.jpg" alt="I ragazzi della WeRide Academy in bici su un prato in montagna">
     <div class="hero-shade"></div>
+    <div class="hero-top wrap">
+      <span class="tag">Ride. Learn. Progress.</span>
+      <h1 class="display display-line">Ride your life.</h1>
+    </div>
     <div class="hero-content wrap">
-      <span class="tag">Ride. Learn. Share.</span>
-      <h1 class="display">Ride<br>your life.</h1>
       <p class="lead">Scuola MTB Enduro &amp; Gravity in Ticino.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#academy">Scopri l'Academy</a>
         <a class="btn btn-ghost" href="#calendario">Calendario</a>
       </div>
     </div>
-    <a class="scroll-cue" href="#numeri" aria-label="Scorri giù"></a>
+    <a class="scroll-cue" href="#academy" aria-label="Scorri giù"></a>
   </section>
 
   <!-- NUMERI -->
-  <section class="numbers topo" id="numeri">
+  <section class="numbers topo" id="academy">
     <div class="wrap numbers-grid">
       <p class="statement reveal">La prima scuola dedicata all'<em>Enduro</em> in Ticino.</p>
       <dl class="stats reveal">
@@ -63,9 +74,9 @@
   </section>
 
   <!-- ACADEMY / SEDI -->
-  <section class="academy" id="academy">
+  <section class="academy" id="sedi">
     <div class="academy-media">
-      <img src="assets/img/kid_rider.jpg" alt="Giovane rider WeRide Academy in discesa" loading="lazy">
+      <img src="assets/img/sedi_squadra.jpg" alt="Giovane rider della WeRide Academy su un sentiero nel bosco" loading="lazy">
     </div>
     <div class="academy-body topo">
       <span class="kicker">Academy · 5–14 anni</span>
@@ -91,12 +102,12 @@
   <!-- PROGRAMMI -->
   <section class="programs" id="lezioni">
     <header class="section-head wrap">
-      <span class="kicker">Lezioni private</span>
+      <span class="kicker">Lezioni</span>
       <h2 class="title reveal">Non solo bambini.</h2>
     </header>
 
     <article class="program" id="private">
-      <figure class="program-img"><img src="assets/img/wix_dsc3196.jpg" alt="Lezione privata di MTB su prato" loading="lazy"></figure>
+      <figure class="program-img"><img src="assets/img/lezioni_private.jpg" alt="Istruttore e allieva in discesa su un trail nel bosco" loading="lazy"></figure>
       <div class="program-text">
         <span class="num">01</span>
         <h3 class="title-sm">Lezioni private</h3>
@@ -106,7 +117,7 @@
     </article>
 
     <article class="program flip" id="gruppo">
-      <figure class="program-img"><img src="assets/img/bikeyard_drop.jpg" alt="Area salti e drop del Bikeyard" loading="lazy"></figure>
+      <figure class="program-img"><img src="assets/img/lezioni_gruppo.jpg" alt="Gruppo di rider abbracciati con le bici in montagna" loading="lazy"></figure>
       <div class="program-text">
         <span class="num">02</span>
         <h3 class="title-sm">Lezioni di gruppo</h3>
@@ -116,7 +127,7 @@
     </article>
 
     <article class="program" id="outdoor">
-      <figure class="program-img"><img src="assets/img/wix_044d.jpg" alt="Rider al tramonto in alta montagna" loading="lazy"></figure>
+      <figure class="program-img"><img src="assets/img/eventi_outdoor.jpg" alt="Gruppo di rider WeRide in uscita su un sentiero di montagna" loading="lazy"></figure>
       <div class="program-text">
         <span class="num">03</span>
         <h3 class="title-sm">Eventi outdoor</h3>
@@ -125,7 +136,7 @@
       </div>
     </article>
 
-    <article class="program flip" id="atletica">
+    <article class="program flip" id="atletica" hidden>
       <figure class="program-img"><img src="assets/img/rider2.jpg" alt="Rider in velocità nel bosco" loading="lazy"></figure>
       <div class="program-text">
         <span class="num">04</span>
@@ -135,7 +146,7 @@
       </div>
     </article>
 
-    <article class="program winter" id="inverno">
+    <article class="program winter" id="inverno" hidden>
       <figure class="program-img"><img src="assets/img/bikeyard_forest.jpg" alt="Trail nel bosco in inverno" loading="lazy"></figure>
       <div class="program-text">
         <span class="num">05</span>
@@ -144,35 +155,6 @@
         <a class="link" href="#calendario">Programma invernale →</a>
       </div>
     </article>
-  </section>
-
-  <!-- SUMMER CAMPS -->
-  <section class="camps" id="summer-camps">
-    <img src="assets/img/wix_pex58536.jpg" alt="Ragazzi del Summer Camp WeRide Academy al pumptrack" loading="lazy">
-    <div class="camps-shade"></div>
-    <div class="camps-content wrap">
-      <span class="tag tag-amber">Summer Camps</span>
-      <h2 class="display-md">L'estate<br>si pedala.</h2>
-      <dl class="camps-stats">
-        <div><dt>7+</dt><dd>Settimane di camp nel 2026</dd></div>
-        <div><dt>~100</dt><dd>Bambini e ragazzi in sella</dd></div>
-      </dl>
-      <p>Tecnica di guida, sicurezza e tanto divertimento sui trail del Ticino.</p>
-      <p class="camps-note"><strong>A gennaio esce il calendario 2027.</strong> Tieni gli occhi aperti ;)</p>
-      <a class="btn btn-primary" href="https://www.instagram.com/weride.academy" target="_blank" rel="noopener">Seguici per le date</a>
-    </div>
-  </section>
-
-  <!-- BIKEYARD -->
-  <section class="bikeyard">
-    <img src="assets/img/bikeyard_hero.jpg" alt="The Bikeyard Capriasca, area MTB a Tesserete" loading="lazy">
-    <div class="bikeyard-shade"></div>
-    <div class="bikeyard-content wrap">
-      <span class="tag">Tesserete · Ticino</span>
-      <h2 class="display-md">The Bikeyard<br><span class="accent">Capriasca</span></h2>
-      <p>Il nostro terreno di casa. Trail, jumpline, pumptrack.</p>
-      <a class="btn btn-ghost" href="https://www.instagram.com/thebikeyard.capriasca" target="_blank" rel="noopener">@thebikeyard.capriasca</a>
-    </div>
   </section>
 
   <!-- CALENDARIO -->
@@ -192,8 +174,26 @@
 
       <div class="chips" id="calFilters" role="group" aria-label="Filtra per tipo"></div>
 
-      <div class="cal-grid" id="calGrid" aria-hidden="true"></div>
+      <div class="cal-grid" id="calGrid"></div>
+      <h3 class="agenda-title" id="calAgendaTitle"></h3>
       <ol class="agenda" id="calAgenda"></ol>
+    </div>
+  </section>
+
+  <!-- SUMMER CAMPS -->
+  <section class="camps" id="summer-camps">
+    <img src="assets/img/summer_camps.jpg" alt="I ragazzi del Summer Camp con le bici sopra la Capriasca" loading="lazy">
+    <div class="camps-shade"></div>
+    <div class="camps-content wrap">
+      <span class="tag tag-amber">Summer Camps</span>
+      <h2 class="display-md">L'estate<br>si pedala.</h2>
+      <dl class="camps-stats">
+        <div><dt>7</dt><dd>Settimane di camp nel 2026</dd></div>
+        <div><dt><small>quasi</small>100</dt><dd>Bambini e ragazzi in bici</dd></div>
+      </dl>
+      <p>Tecnica di guida, sicurezza e tanto divertimento sui trail del Ticino.</p>
+      <p class="camps-note"><strong>A gennaio esce il calendario 2027.</strong><br>Tieni gli occhi aperti.</p>
+      <a class="btn btn-primary" href="https://www.instagram.com/weride.academy" target="_blank" rel="noopener">Seguici per le date</a>
     </div>
   </section>
 
@@ -205,64 +205,83 @@
         <h2 class="title reveal">Chi ti porta in sella.</h2>
       </header>
 
-      <ul class="team-row founders">
-        <li class="member reveal">
-          <div class="member-photo"><img src="assets/img/team_johnny.jpg" alt="Johnny Guggiari" loading="lazy"></div>
-          <h3>Johnny Guggiari</h3><p>Istruttore &amp; fondatore</p>
-        </li>
-        <li class="member reveal">
-          <div class="member-photo"><img src="assets/img/team_ricky.jpg" alt="Ricky Fadda" loading="lazy"></div>
-          <h3>Ricky Fadda</h3><p>Istruttore &amp; fondatore</p>
-        </li>
-      </ul>
-
-      <ul class="team-row instructors">
-        <li class="member reveal">
-          <div class="member-photo placeholder" data-initials="YC"></div>
-          <h3>Yannick Charles</h3><p>Istruttore</p>
-        </li>
-        <li class="member reveal">
-          <div class="member-photo placeholder" data-initials="CG"></div>
-          <h3>Cristian Gubeli</h3><p>Istruttore</p>
-        </li>
-        <li class="member reveal">
-          <div class="member-photo placeholder" data-initials="JV"></div>
-          <h3>Johnny Vecchi</h3><p>Istruttore</p>
-        </li>
-      </ul>
-
-      <ul class="team-row staff">
-        <li class="member reveal">
-          <div class="member-photo placeholder" data-initials="EA"></div>
-          <h3>Eduardo Aldunate</h3><p>Stratega</p>
-        </li>
-        <li class="member reveal">
-          <div class="member-photo placeholder" data-initials="DL"></div>
-          <h3>Daniela Letelier</h3><p>Marketing</p>
-        </li>
-      </ul>
+      <div class="team-strip">
+        <div class="team-group" style="--n:2">
+          <span class="group-label">Fondatori</span>
+          <ul>
+          <li class="member reveal">
+            <div class="member-photo"><img src="assets/img/team_johnny.jpg" alt="Johnny Guggiari" loading="lazy"></div>
+            <h3>Johnny Guggiari</h3><p>Istruttore</p>
+          </li>
+          <li class="member reveal">
+            <div class="member-photo"><img src="assets/img/team_ricky.jpg" alt="Ricky Fadda" loading="lazy"></div>
+            <h3>Ricky Fadda</h3><p>Istruttore</p>
+          </li>
+          </ul>
+        </div>
+        <div class="team-group" style="--n:3">
+          <span class="group-label">Istruttori</span>
+          <ul>
+          <li class="member reveal">
+            <div class="member-photo"><img src="assets/img/team_yannick.jpg" alt="Yannick Charles" loading="lazy"></div>
+            <h3>Yannick Charles</h3><p>Istruttore</p>
+          </li>
+          <li class="member reveal">
+            <div class="member-photo"><img src="assets/img/team_cristian.jpg" alt="Cristian Gubeli" loading="lazy"></div>
+            <h3>Cristian Gubeli</h3><p>Istruttore</p>
+          </li>
+          <li class="member reveal">
+            <div class="member-photo"><img src="assets/img/team_vecchi.jpg" alt="Johnny Vecchi" loading="lazy"></div>
+            <h3>Johnny Vecchi</h3><p>Istruttore</p>
+          </li>
+          </ul>
+        </div>
+        <div class="team-group" style="--n:2">
+          <span class="group-label">Staff</span>
+          <ul>
+          <li class="member reveal">
+            <div class="member-photo"><img src="assets/img/team_eduardo.jpg" alt="Eduardo Aldunate" loading="lazy"></div>
+            <h3>Eduardo Aldunate</h3><p>Stratega</p>
+          </li>
+          <li class="member reveal">
+            <div class="member-photo"><img src="assets/img/team_daniela.jpg" alt="Daniela Letelier" loading="lazy"></div>
+            <h3>Daniela Letelier</h3><p>Marketing</p>
+          </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SPONSORS -->
+  <!-- PARTNER -->
   <section class="sponsors">
     <div class="wrap">
-      <span class="kicker">Partner &amp; sponsor</span>
-      <ul class="sponsor-row">
-        <li><img src="assets/sponsors/oneal.png" alt="O'Neal" loading="lazy"></li>
-        <li><img src="assets/sponsors/ftpro.png" alt="FT Pro" loading="lazy"></li>
-        <li><img src="assets/sponsors/joerg.png" alt="Sponsor" loading="lazy"></li>
-        <li><img src="assets/sponsors/sponsor_a.png" alt="Sponsor" loading="lazy"></li>
-        <li><img src="assets/sponsors/sponsor_b.png" alt="Sponsor" loading="lazy"></li>
-        <li><img src="assets/sponsors/beebad.jpg" alt="Beebad" loading="lazy"></li>
-        <li class="on-light"><img src="assets/sponsors/capriasca.png" alt="Comune di Capriasca" loading="lazy"></li>
-      </ul>
+      <div class="partner-group">
+        <span class="kicker">Brand partners</span>
+        <ul class="sponsor-row">
+          <li><img src="assets/sponsors/merida.png" alt="Merida" loading="lazy"></li>
+          <li><img src="assets/sponsors/kenda_white.png" alt="Kenda" loading="lazy"></li>
+          <li><img src="assets/sponsors/oneal.png" alt="O'Neal" loading="lazy"></li>
+          <li><img src="assets/sponsors/garagevallone.png" alt="Garage Vallone" loading="lazy"></li>
+          <li><img src="assets/sponsors/joerg.png" alt="Jörg" loading="lazy"></li>
+        </ul>
+      </div>
+      <div class="partner-group">
+        <span class="kicker">Negozi partners</span>
+        <ul class="sponsor-row">
+          <li><img src="assets/sponsors/2wheels.png" alt="2wheels Rental" loading="lazy"></li>
+          <li class="logo-lg"><img src="assets/sponsors/balmelli.png" alt="Balmelli Sport Lugano" loading="lazy"></li>
+          <li class="logo-invert"><img src="assets/sponsors/freesoul.png" alt="Freesoul E-Bike Balerna" loading="lazy"></li>
+          <li><img src="assets/sponsors/velocafe.png" alt="Velo Café Giubiasco" loading="lazy"></li>
+          <li><img src="assets/sponsors/oekk.png" alt="ÖKK" loading="lazy"></li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- CONTATTO -->
   <section class="contact" id="contatto">
-    <img class="contact-bg" src="assets/img/bikeyard_arena.jpg" alt="" loading="lazy">
+    <img class="contact-bg" src="assets/img/contatto_home.jpg" alt="" loading="lazy">
     <div class="contact-shade"></div>
     <div class="wrap contact-inner">
       <span class="tag">United by the ride.</span>

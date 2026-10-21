@@ -5,10 +5,10 @@ Sito statico (HTML + CSS + JS, nessuna build). Pronto per GitHub + Vercel.
 ## Provare in locale
 
 ```bash
-python3 -m http.server 5173
+python3 serve.py
 ```
 
-Poi apri http://localhost:5173
+Poi apri http://localhost:5173 (il server disattiva la cache: basta ricaricare per vedere le modifiche).
 
 ## Struttura
 
