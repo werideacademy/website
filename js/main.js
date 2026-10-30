@@ -219,7 +219,8 @@
     pop.style.setProperty("--c", c.color); pop.style.setProperty("--ct", c.text || c.color);
     pop.innerHTML = `<span class="pop-cat">${esc(c.label)}</span>
       <h4>${esc(it.titolo)}</h4>
-      <dl>${row("Data", dateLabel(it, date))}${row("Orario", it.orario)}${row("Luogo", it.luogo)}${row("Costo", it.prezzo)}${row("Note", it.note)}</dl>`;
+      <dl>${row("Data", dateLabel(it, date))}${row("Orario", it.orario)}${row("Luogo", it.luogo)}${row("Costo", it.prezzo)}${row("Note", it.note)}</dl>
+      ${it.link ? `<a class="pop-link" href="${esc(it.link)}" target="_blank" rel="noopener">Tutte le info ↗</a>` : ""}`;
     pop.hidden = false;
     popFor = btn;
     btn.setAttribute("aria-describedby", "calPop");
@@ -232,7 +233,13 @@
     pop.style.left = `${left}px`;
     pop.style.top = `${top}px`;
   }
+  let hideT;
+  const hideSoon = () => { clearTimeout(hideT); hideT = setTimeout(hidePop, 250); }; // tempo per raggiungere la scheda col mouse
+  const keepPop = () => clearTimeout(hideT);
+  pop.addEventListener("mouseenter", keepPop);
+  pop.addEventListener("mouseleave", hideSoon);
   function hidePop() {
+    clearTimeout(hideT);
     if (popFor) popFor.removeAttribute("aria-describedby");
     pop.hidden = true;
     popFor = null;
@@ -240,9 +247,9 @@
 
   grid.addEventListener("mouseover", (e) => {
     const b = e.target.closest(".pill");
-    if (!b) hidePop(); else if (b !== popFor) showPop(b);
+    if (!b) hideSoon(); else { keepPop(); if (b !== popFor) showPop(b); }
   });
-  grid.addEventListener("mouseleave", hidePop);
+  grid.addEventListener("mouseleave", hideSoon);
   grid.addEventListener("focusin", (e) => { const b = e.target.closest(".pill"); if (b) showPop(b); });
   grid.addEventListener("focusout", hidePop);
   grid.addEventListener("click", (e) => {
@@ -301,7 +308,8 @@
             <div class="when"><b>${date.getDate()}${it.fine ? "–" + Number(it.fine.slice(8)) : ""}</b><span>${DOW_LONG[date.getDay()]}</span></div>
             <div><h3>${esc(it.titolo)}</h3>
             <p>${[it.orario, it.luogo, it.prezzo].filter(Boolean).map(esc).join(" · ")}</p>
-            ${it.note ? `<p class="note">${esc(it.note)}</p>` : ""}</div>
+            ${it.note ? `<p class="note">${esc(it.note)}</p>` : ""}
+            ${it.link ? `<a class="agenda-link" href="${esc(it.link)}" target="_blank" rel="noopener">Tutte le info ↗</a>` : ""}</div>
             <span class="cat">${esc(c.label)}</span>
           </li>`;
         }).join("")

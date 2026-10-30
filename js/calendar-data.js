@@ -21,6 +21,7 @@
  *     orario: "10:00 – 16:00"
  *     prezzo: "Fr. 17 (prezzo funivia)"
  *     note:   "Portare casco integrale e protezioni"
+ *     link:   "https://…"  (pulsante "Tutte le info", es. post Instagram)
  */
 window.WERIDE_CALENDAR = {
   settimanali: [
@@ -39,10 +40,10 @@ window.WERIDE_CALENDAR = {
     { data: "2026-10-10", titolo: "Adult E-Bike – Intermediate",     luogo: "Bikeyard + Capriasca", cat: "ebike" },
     { data: "2026-10-17", titolo: "Monte Tamaro – Black Deer Project", orario: "10:00 – 16:00", luogo: "Monte Tamaro", prezzo: "Fr. 17 (prezzo funivia)", cat: "uscite" },
     { data: "2026-10-25", titolo: "Lady MTB – Base",                 luogo: "Bikeyard + Capriasca", cat: "lady" },
-    { data: "2026-10-31", titolo: "Halloween Party + Airbag Trick Contest / Step-Up", luogo: "Bikeyard", cat: "eventi" },
+    { data: "2026-10-31", titolo: "Halloween Party + Airbag Trick Contest / Step-Up", orario: "11:00 – 16:30", luogo: "Bikeyard", link: "https://www.instagram.com/p/DePRNRxjL_W/?img_index=1", cat: "eventi" },
 
     // ---- Novembre 2026
-    { data: "2026-11-07", titolo: "Adult E-Bike – Advanced",         luogo: "Bikeyard + Capriasca", cat: "ebike" },
+    { data: "2026-11-07", titolo: "Adult E-Bike – Intermediate",         luogo: "Bikeyard + Capriasca", cat: "ebike" },
     { data: "2026-11-14", titolo: "Kids",                            luogo: "Bikeyard",             cat: "uscite" },
     { data: "2026-11-21", titolo: "Adult & 15+ Jump Camp",           luogo: "Bikeyard",             cat: "jump" },
 
