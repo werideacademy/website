@@ -210,6 +210,12 @@
     const a = new Date(it.data + "T00:00"), b = new Date(it.fine + "T00:00");
     return `${a.getDate()}–${longDate(b).replace(/^\S+ /, "")}`;
   };
+  // pulsante "Iscriviti": email a info@ con oggetto e testo già compilati
+  const signupHref = (it, date) => {
+    const what = `${it.titolo} – ${dateLabel(it, date)}`;
+    const body = `Buongiorno,\nvorrei iscrivermi a: ${what}.\n\nNome e cognome del partecipante:\nEtà:\nTelefono:\n`;
+    return `mailto:info@werideacademy.ch?subject=${encodeURIComponent("Iscrizione: " + what)}&body=${encodeURIComponent(body)}`;
+  };
 
   function showPop(btn) {
     const { date, it } = pillItems[btn.dataset.i] || {};
@@ -220,7 +226,8 @@
     pop.innerHTML = `<span class="pop-cat">${esc(c.label)}</span>
       <h4>${esc(it.titolo)}</h4>
       <dl>${row("Data", dateLabel(it, date))}${row("Orario", it.orario)}${row("Luogo", it.luogo)}${it.ritrovo ? `<div><dt>Ritrovo</dt><dd><a href="${esc(it.ritrovo)}" target="_blank" rel="noopener">Apri in Google Maps ↗</a></dd></div>` : ""}${row("Costo", it.prezzo)}${row("Note", it.note)}</dl>
-      ${it.link ? `<a class="pop-link" href="${esc(it.link)}" target="_blank" rel="noopener">Tutte le info ↗</a>` : ""}`;
+      <div class="pop-actions"><a class="pop-signup" href="${esc(signupHref(it, date))}">Iscriviti</a>
+      ${it.link ? `<a class="pop-link" href="${esc(it.link)}" target="_blank" rel="noopener">Tutte le info ↗</a>` : ""}</div>`;
     pop.hidden = false;
     popFor = btn;
     btn.setAttribute("aria-describedby", "calPop");
@@ -310,7 +317,8 @@
             <p>${[it.orario, it.luogo, it.prezzo].filter(Boolean).map(esc).join(" · ")}</p>
             ${it.note ? `<p class="note">${esc(it.note)}</p>` : ""}
             ${it.ritrovo ? `<a class="agenda-link" href="${esc(it.ritrovo)}" target="_blank" rel="noopener">Punto di ritrovo ↗</a>` : ""}
-            ${it.link ? `<a class="agenda-link" href="${esc(it.link)}" target="_blank" rel="noopener">Tutte le info ↗</a>` : ""}</div>
+            ${it.link ? `<a class="agenda-link" href="${esc(it.link)}" target="_blank" rel="noopener">Tutte le info ↗</a>` : ""}
+            <a class="agenda-signup" href="${esc(signupHref(it, date))}">Iscriviti</a></div>
             <span class="cat">${esc(c.label)}</span>
           </li>`;
         }).join("")
