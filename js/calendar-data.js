@@ -46,7 +46,7 @@ window.WERIDE_CALENDAR = {
     // ---- Novembre 2026
     { data: "2026-11-07", titolo: "Adult E-Bike – Intermediate",         orario: "9:30 – 12:00", luogo: "Bikeyard + Capriasca", ritrovo: "https://maps.app.goo.gl/7QZz7L7cQgZuTbof7", prezzo: "Fr. 60", cat: "ebike" },
     { data: "2026-11-14", titolo: "Kids",                            luogo: "Bikeyard",             cat: "uscite" },
-    { data: "2026-11-21", titolo: "Adult & 15+ Jump Camp",           luogo: "Bikeyard",             cat: "jump" },
+    { data: "2026-11-21", titolo: "Adult & 15+ Jump Camp",           orario: "9:30 – 12:00", luogo: "Bikeyard", ritrovo: "https://maps.app.goo.gl/7QZz7L7cQgZuTbof7", prezzo: "Fr. 60", cat: "jump" },
 
     // ---- Dicembre 2026
     { data: "2026-12-05", titolo: "Academy Extra Ride – San Lucio / Monte Bar", luogo: "Monte Bar", cat: "uscite" },
