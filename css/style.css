@@ -588,6 +588,9 @@ ul, ol { list-style: none; }
 .shop > div { display: flex; flex-direction: column; flex: 1; }
 .shop .link { align-self: flex-start; margin-top: auto; padding-top: 18px; font-size: .9rem; }
 .info-cta { padding-block: clamp(70px, 9vw, 120px); }
+/* stesso sfondo della sezione sopra: niente doppio spazio */
+.info-block:not(.topo):has(+ .info-cta) { padding-bottom: clamp(48px, 6vw, 80px); }
+.info-block:not(.topo) + .info-cta { padding-top: 0; }
 .info-cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; padding: 24px 28px; background: var(--deep); border-left: 4px solid var(--amber); }
 .info-cta-inner p { font-size: 1.05rem; }
 
