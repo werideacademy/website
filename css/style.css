@@ -548,13 +548,45 @@ ul, ol { list-style: none; }
 .gear-brands .sponsor-row img { height: 40px; }
 .gear-title { margin: 0 0 12px; font-size: .78rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--amber); }
 .gear .info-list + .gear-title { margin-top: 32px; }
+.brand-sponsor { display: block; height: 44px; width: auto; margin-top: 32px; }
+.deal-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 28px; background: var(--line); border: 1px solid var(--line); }
+.deal-stats div { display: grid; gap: 4px; padding: 18px 20px; background: rgba(17,18,19,.88); }
+.deal-stats .deal-main { grid-column: 1 / -1; border-top: 4px solid var(--teal); }
+.deal-stats b, .brand-list b, .shop-deals b { font-family: var(--f-display); font-style: var(--display-style); font-weight: 900; line-height: .9; }
+.deal-stats b { font-size: clamp(2.2rem, 4vw, 3rem); color: var(--amber); }
+.deal-stats .deal-main b { font-size: clamp(3rem, 6vw, 4.6rem); color: var(--teal); }
+.deal-stats span { font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+.deal-note { margin-top: 20px; color: var(--ink-2); font-size: .92rem; max-width: 46ch; }
+.brand-list, .store-list { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.brand-list li { display: grid; grid-template-columns: 110px 1fr auto; align-items: center; gap: 20px; padding: 18px 22px; background: var(--bg); }
+.brand-list img { height: 26px; width: 100%; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); opacity: .85; }
+.brand-list strong { display: block; font-size: 1.05rem; }
+.brand-list span { display: block; color: var(--ink-2); font-size: .88rem; margin-top: 2px; }
+.brand-list b { font-size: 2.2rem; color: var(--teal); }
+.brand-list b.soon { font-family: var(--f-body); font-style: normal; font-weight: 700; font-size: .85rem; color: var(--ink-2); }
+.store-list { grid-template-columns: 1fr 1fr; }
+.store-list li { display: grid; gap: 2px; padding: 16px 22px; background: var(--bg); }
+.store-list strong { font-size: 1rem; }
+.store-list span { color: var(--ink-2); font-size: .88rem; }
+.brand-list + .gear-title, .store-list + .gear-title { margin-top: 40px; }
+.steps { display: grid; gap: 14px; counter-reset: step; }
+.steps li { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: start; color: var(--ink-2); counter-increment: step; }
+.steps li::before { content: counter(step); display: grid; place-items: center; width: 40px; height: 40px; background: var(--teal); color: var(--black); font-family: var(--f-display); font-style: var(--display-style); font-size: 1.2rem; }
+.steps li { min-height: 40px; padding-top: 8px; }
+.steps li::before { margin-top: -8px; }
+.shop-deals { display: grid; gap: 10px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.shop-deals li { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: baseline; }
+.shop-deals b { font-size: 1.7rem; color: var(--amber); }
+.shop-deals span { font-size: .88rem; color: var(--ink); }
+.shop-note { display: block; margin-top: 14px; color: var(--ink-2); font-size: .8rem; }
 .shop-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .shop { display: flex; flex-direction: column; gap: 22px; padding: 28px 24px; background: var(--bg); }
 .shop img { height: 56px; width: auto; max-width: 100%; object-fit: contain; align-self: flex-start; }
 .shop img.shop-gray { filter: grayscale(1); }
 .shop h3 { font-size: 1.1rem; font-weight: 700; }
 .shop p { color: var(--ink-2); font-size: .92rem; margin-top: 4px; }
-.shop .link { margin-top: 14px; font-size: .9rem; }
+.shop > div { display: flex; flex-direction: column; flex: 1; }
+.shop .link { align-self: flex-start; margin-top: auto; padding-top: 18px; font-size: .9rem; }
 .info-cta { padding-block: clamp(70px, 9vw, 120px); }
 .info-cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; padding: 24px 28px; background: var(--deep); border-left: 4px solid var(--amber); }
 .info-cta-inner p { font-size: 1.05rem; }
@@ -662,6 +694,9 @@ ul, ol { list-style: none; }
 
 @media (max-width: 520px) {
   .shop-grid { grid-template-columns: 1fr; }
+  .store-list { grid-template-columns: 1fr; }
+  .brand-list li { grid-template-columns: 1fr auto; }
+  .brand-list img { grid-column: 1 / -1; width: auto; max-width: 140px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .gal-nav { width: 42px; height: 42px; }
   .maint-list, .credit-grid { grid-template-columns: 1fr; }
