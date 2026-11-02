@@ -21,6 +21,7 @@
  *     orario: "10:00 – 16:00"
  *     prezzo: "Fr. 17 (prezzo funivia)"
  *     note:   "Portare casco integrale e protezioni"
+ *     ritrovo: "https://maps.app.goo.gl/…"  (punto di ritrovo su Google Maps)
  *     link:   "https://…"  (pulsante "Tutte le info", es. post Instagram)
  */
 window.WERIDE_CALENDAR = {
@@ -43,7 +44,7 @@ window.WERIDE_CALENDAR = {
     { data: "2026-10-31", titolo: "Halloween Party + Airbag Trick Contest / Step-Up", orario: "11:00 – 16:30", luogo: "Bikeyard", link: "https://www.instagram.com/p/DePRNRxjL_W/?img_index=1", cat: "eventi" },
 
     // ---- Novembre 2026
-    { data: "2026-11-07", titolo: "Adult E-Bike – Intermediate",         luogo: "Bikeyard + Capriasca", cat: "ebike" },
+    { data: "2026-11-07", titolo: "Adult E-Bike – Intermediate",         orario: "9:30 – 12:00", luogo: "Bikeyard + Capriasca", ritrovo: "https://maps.app.goo.gl/7QZz7L7cQgZuTbof7", prezzo: "Fr. 60", cat: "ebike" },
     { data: "2026-11-14", titolo: "Kids",                            luogo: "Bikeyard",             cat: "uscite" },
     { data: "2026-11-21", titolo: "Adult & 15+ Jump Camp",           luogo: "Bikeyard",             cat: "jump" },
 

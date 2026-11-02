@@ -351,6 +351,8 @@ ul, ol { list-style: none; }
 .cal-pop dl div { display: grid; grid-template-columns: 64px 1fr; gap: 10px; font-size: .88rem; }
 .cal-pop dt { color: #a9adb0; }
 .cal-pop dd { margin: 0; }
+.cal-pop dd a { color: #fff; text-decoration: none; border-bottom: 1px solid var(--ct, var(--teal)); }
+.cal-pop dd a:hover { color: var(--ct, var(--teal)); }
 .pop-link, .agenda-link { display: inline-block; font-weight: 700; font-size: .88rem; text-decoration: none; color: #fff; border-bottom: 2px solid var(--ct, var(--teal)); padding-bottom: 2px; transition: color .2s; }
 .pop-link { margin-top: 14px; }
 .agenda-link { margin-top: 6px; color: var(--ink); }

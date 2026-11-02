@@ -219,7 +219,7 @@
     pop.style.setProperty("--c", c.color); pop.style.setProperty("--ct", c.text || c.color);
     pop.innerHTML = `<span class="pop-cat">${esc(c.label)}</span>
       <h4>${esc(it.titolo)}</h4>
-      <dl>${row("Data", dateLabel(it, date))}${row("Orario", it.orario)}${row("Luogo", it.luogo)}${row("Costo", it.prezzo)}${row("Note", it.note)}</dl>
+      <dl>${row("Data", dateLabel(it, date))}${row("Orario", it.orario)}${row("Luogo", it.luogo)}${it.ritrovo ? `<div><dt>Ritrovo</dt><dd><a href="${esc(it.ritrovo)}" target="_blank" rel="noopener">Apri in Google Maps ↗</a></dd></div>` : ""}${row("Costo", it.prezzo)}${row("Note", it.note)}</dl>
       ${it.link ? `<a class="pop-link" href="${esc(it.link)}" target="_blank" rel="noopener">Tutte le info ↗</a>` : ""}`;
     pop.hidden = false;
     popFor = btn;
@@ -309,6 +309,7 @@
             <div><h3>${esc(it.titolo)}</h3>
             <p>${[it.orario, it.luogo, it.prezzo].filter(Boolean).map(esc).join(" · ")}</p>
             ${it.note ? `<p class="note">${esc(it.note)}</p>` : ""}
+            ${it.ritrovo ? `<a class="agenda-link" href="${esc(it.ritrovo)}" target="_blank" rel="noopener">Punto di ritrovo ↗</a>` : ""}
             ${it.link ? `<a class="agenda-link" href="${esc(it.link)}" target="_blank" rel="noopener">Tutte le info ↗</a>` : ""}</div>
             <span class="cat">${esc(c.label)}</span>
           </li>`;
