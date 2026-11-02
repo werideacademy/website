@@ -20,7 +20,7 @@
   nav.addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
 
-  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = Math.max(2027, new Date().getFullYear());
 
   /* ---------- Animazioni in entrata ---------- */
   if ("IntersectionObserver" in window) {
