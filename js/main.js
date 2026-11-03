@@ -20,6 +20,12 @@
   nav.addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
 
+  // "#top" punta all'header fisso: il browser non scorre, quindi torniamo su a mano
+  document.querySelectorAll('a[href="#top"]').forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0 });
+  }));
+
   document.getElementById("year").textContent = Math.max(2027, new Date().getFullYear());
 
   /* ---------- Animazioni in entrata ---------- */
