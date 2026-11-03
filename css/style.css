@@ -490,6 +490,8 @@ ul, ol { list-style: none; }
 .maintenance .partner-group { padding-top: 48px; border-top: 1px solid var(--line); }
 /* righe con 4 loghi */
 .sponsor-row:has(> li:nth-child(4):last-child) li { flex-basis: calc((100% - 3 * 40px) / 4); }
+/* righe con 6 loghi: tutti su una riga */
+.sponsor-row:has(> li:nth-child(6):last-child) li { flex-basis: calc((100% - 5 * 40px) / 6); }
 /* logo illustrato a colori (Nord vs Sud): niente silhouette, solo scala di grigi */
 .sponsor-row .logo-lg img { height: 68px; }
 /* logo a badge con scritte bianche su fondo nero (Freesoul): invertito, le scritte restano leggibili */
@@ -694,6 +696,7 @@ ul, ol { list-style: none; }
   .camps { align-items: flex-end; }
   .sponsor-row { justify-content: center; gap: 32px 24px; }
   .sponsor-row li { flex-basis: calc((100% - 2 * 24px) / 3); }
+  .sponsor-row:has(> li:nth-child(6):last-child) li { flex-basis: calc((100% - 2 * 24px) / 3); }
   .sponsor-row img { height: 38px; }
   .bikeyard-shade { background: linear-gradient(180deg, rgba(0,0,0,.3), rgba(0,0,0,.85)); }
   .bikeyard { align-items: flex-end; padding-bottom: 64px; }
