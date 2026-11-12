@@ -549,9 +549,9 @@ ul, ol { list-style: none; }
 .doc-link strong { display: block; font-size: 1rem; }
 .doc-link small { display: block; margin-top: 2px; color: var(--ink-2); font-size: .82rem; }
 .gear-brands { margin-top: clamp(40px, 6vw, 80px); padding-top: 32px; border-top: 1px solid var(--line); }
-.gear-brands .sponsor-row { justify-content: flex-start; gap: 40px; }
-.gear-brands .sponsor-row li { flex: 0 1 auto; }
-.gear-brands .sponsor-row img { height: 40px; }
+.gear-brands .sponsor-row { flex-direction: column; align-items: flex-start; gap: 40px; }
+.gear-brands .sponsor-row li { flex: none; width: min(290px, 100%); min-height: 0; justify-content: flex-start; }
+.gear-brands .sponsor-row img { width: 100%; height: auto; }  /* tutti i loghi alla stessa larghezza */
 .gear-title { margin: 0 0 12px; font-size: .78rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--amber); }
 .gear .info-list + .gear-title { margin-top: 32px; }
 .brand-sponsor { display: block; height: 44px; width: auto; margin-top: 32px; }
