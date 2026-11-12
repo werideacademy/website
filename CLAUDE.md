@@ -29,7 +29,7 @@ assets/img/           foto, logo, topo-light.svg (sfondo curve di livello)
 
 ## Pagina Genitori — ordine sezioni
 
-01 Condizioni e regole (`#regole`) · 02 Marchi e sconti (`#marchi`, Belimport: marchi, % soci/genitori, negozi convenzionati, come attivare) · 03 Negozi partner (`#negozi`, schede con sconti officina/noleggi) · 04 Cosa comprare (`#attrezzatura`).
+01 Condizioni e regole (`#regole`) · 02 Marchi e sconti (`#marchi`, Belimport: marchi, % soci/genitori, negozi convenzionati, come attivare) · 03 Negozi partner (`#negozi`, schede con sconti officina/noleggi) · 04 Cosa comprare (`#attrezzatura`, con "Come scegliere le protezioni") · 05 Come vestirli (`#abbigliamento`).
 Se si aggiunge/sposta una sezione: aggiornare numerazione dei kicker, `.page-index` in alto e i link nel footer (presenti in tutte e tre le pagine).
 Le sezioni alternano sfondo `topo` e piano; il CSS riduce lo spazio sopra `.info-cta` quando la sezione precedente non è `topo`.
 
