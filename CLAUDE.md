@@ -24,7 +24,7 @@ assets/img/           foto, logo, topo-light.svg (sfondo curve di livello)
   `orario`, `prezzo` (etichetta "Costo"), `note`, `link` ("Tutte le info ↗"), `ritrovo` (URL Google Maps → "Apri in Google Maps ↗").
 - Ogni attività ha un pulsante **Iscriviti** (`signupHref` in `main.js`) che apre una mail a `info@werideacademy.ch`:
   - `cat: "academy"` → richiesta di **lezione di prova** per il figlio (nome del figlio, età, sede precompilata da `luogo`).
-  - altre categorie → iscrizione generica (nome e cognome, età, telefono).
+  - altre categorie → iscrizione generica (nome e cognome, età, telefono, CAP di residenza).
 - Il pulsante usa il colore della categoria (`--ct`/`--c`).
 
 ## Pagina Genitori — ordine sezioni

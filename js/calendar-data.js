@@ -23,7 +23,6 @@
  *     note:   "Portare casco integrale e protezioni"
  *     ritrovo: "https://maps.app.goo.gl/…"  (punto di ritrovo su Google Maps)
  *     link:   "https://…"  (pulsante "Tutte le info", es. post Instagram)
- *     cap:    true  (nella mail di iscrizione chiede anche il CAP di residenza)
  */
 window.WERIDE_CALENDAR = {
   settimanali: [
@@ -46,7 +45,7 @@ window.WERIDE_CALENDAR = {
 
     // ---- Novembre 2026
     { data: "2026-11-07", titolo: "Adult E-Bike – Intermediate",         orario: "9:30 – 12:00", luogo: "Bikeyard + Capriasca", ritrovo: "https://maps.app.goo.gl/7QZz7L7cQgZuTbof7", prezzo: "Fr. 60", cat: "ebike" },
-    { data: "2026-11-14", titolo: "Kids",                            orario: "14:00 – 16:30", luogo: "Bikeyard · 6–11 anni", ritrovo: "https://maps.app.goo.gl/7QZz7L7cQgZuTbof7", prezzo: "Fr. 40", note: "Iscrizione obbligatoria", cap: true, cat: "uscite" },
+    { data: "2026-11-14", titolo: "Kids",                            orario: "14:00 – 16:30", luogo: "Bikeyard · 6–11 anni", ritrovo: "https://maps.app.goo.gl/7QZz7L7cQgZuTbof7", prezzo: "Fr. 40", note: "Iscrizione obbligatoria", cat: "uscite" },
     { data: "2026-11-21", titolo: "Adult & 15+ Jump Camp",           orario: "9:30 – 12:00", luogo: "Bikeyard", ritrovo: "https://maps.app.goo.gl/7QZz7L7cQgZuTbof7", prezzo: "Fr. 60", cat: "jump" },
 
     // ---- Dicembre 2026
