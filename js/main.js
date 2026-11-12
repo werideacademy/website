@@ -224,7 +224,7 @@
     const subject = trial ? `Lezione di prova: ${what}` : `Iscrizione: ${what}`;
     const body = trial
       ? `Buongiorno,\nvorrei iscrivere mio figlio a una lezione di prova: ${what}.\n\nNome del figlio:\nEtà:\nSede: ${String(it.luogo || "").split(" · ")[0]}\n`
-      : `Buongiorno,\nvorrei iscrivermi a: ${what}.\n\nNome e cognome del partecipante:\nEtà:\nTelefono:\n`;
+      : `Buongiorno,\nvorrei iscrivermi a: ${what}.\n\nNome e cognome del partecipante:\nEtà:\nTelefono:\n${it.cap ? "CAP di residenza:\n" : ""}`;
     return `mailto:info@werideacademy.ch?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
